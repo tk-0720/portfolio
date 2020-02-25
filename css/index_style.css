@@ -46,7 +46,7 @@
 .topTitle_area{
   height: 100vh;
   position: relative;
-    margin: 200px 0 0;
+margin: 200px 0 -200px;
 }
 .top_space{
 height: 121px;
