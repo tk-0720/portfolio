@@ -1,0 +1,223 @@
+body{
+    background-color: #eee;
+}
+header {
+    background: #fff;
+    height: 70px;
+   position: relative; 
+}
+.top_logo{
+    position: absolute;
+  z-index: 1;
+}
+.top_logo img{
+
+  top:0;
+      left: 0;
+    height: 121px;
+    width: auto;
+    margin: 3px 0 0 15px;
+}
+.menu{
+      position: absolute;
+list-style: none;
+	top: 50%;
+    right: 0%;
+    transform: translate(-10%, -50%);
+      width: 480px;
+  
+}
+.menu li{
+  text-align: center;
+  width: 95px;
+  display: inline-block;
+}
+.menu li a{
+  text-decoration:none;
+  color: #555;
+      letter-spacing: 1px;
+    transition: 0.5s;
+}
+.menu li a:hover{
+color: rgba(191,103,28,1);
+  transition: 0.5s;
+}
+
+.top_area{
+   height: auto;
+   max-width: 100%;
+}
+.cafe_top_image{
+    width: 100%;
+  height: auto;
+/*max-height: 90vh;*/
+}
+
+main{
+    padding: 120px 5%;
+}
+
+footer{
+  padding: 3% 10% 0%;
+height: 265px;
+  background-color: #222;
+  color: #aaa;
+}
+.address{
+line-height: 28px;
+    letter-spacing: 2px;
+}
+.address span{
+font-size: 1.5rem;
+      line-height: 40px;
+}
+.Copyright{
+text-align: center;
+      font-size: 14px;
+margin-top: 20px;
+}
+.content_title h2{
+padding: 0 2% 20px;
+color: rgba(191,103,28,1);
+}
+
+.content_title h2 span{
+  border-bottom: solid;
+  letter-spacing: 1px;
+}
+/*　疑似要素 要素の一文字目を指定*/
+.content_title h2::first-letter{
+  font-size: 1.8em;
+  letter-spacing: 2px;
+}
+.name{
+  text-align: center;
+      letter-spacing: 1px;
+}
+.price{
+  text-align: center;
+}
+.price small{
+ font-weight: 500;
+      letter-spacing: 1px;
+    margin: 0 0 0 5px;
+}
+.caption{
+  margin: 8px 0 0 0;
+}
+
+.googleMap{
+  width: 89%;
+  height: 450px;
+  border: 0;
+  display: block;
+  margin: auto;
+}
+
+/*coffee-------------------*/
+#COFFEE{
+  margin-bottom:100px;
+  color: #555;
+}
+
+.COFFEE_area{
+    display: flex;
+    padding: 0% 2%;
+}
+.coffee_box{
+    margin: auto;
+}
+.coffee_box img{
+ max-width: 250px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+/*coffee end----------------*/
+/*sweets-------------------*/
+#SWEETS{
+  margin-bottom:100px;
+  color: #555;
+}
+.SWEET_area{
+    display: flex;
+      padding: 0 2%;
+}
+.sweets_box{
+    margin: auto;
+}
+.sweets_box img{
+ max-width: 250px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+
+/*sweets end----------------*/
+/*ABOUT_US-------------------*/
+#ABOUT_US{
+    margin-bottom: 200px;
+  color: #555;
+}
+.coffee_content_1{
+margin: 20px auto 30px;
+}
+
+.coffee_content_1 .image_area{
+    margin: 0px 0 0px 18%;
+}
+.coffee_content_1 .image_area img{
+    width: 350px;
+    height: auto;
+}
+.coffee_content_1 .text_area{
+
+}
+.content_width{
+   /*  width: 700px; */
+    display: flex;
+  margin: auto;
+}
+.color_box{
+      position: absolute;
+background-color: rgba(150,150,150,0.3);
+    width: 386px;
+    height: 250px;
+    margin: 110px 0px 0px -150px;
+  z-index: -1;
+}
+.color_box p{
+      line-height: 45px;
+    letter-spacing: 8px;
+    font-size: 20px;
+      text-align: right;
+    margin: 35px 0 0 0;
+}
+/*ABOUT_US end-------------------*/
+/*news-------------------*/
+#NEWS{
+background-color: #ddd;
+    padding: 1% 0% 4%;
+  margin-bottom:100px;
+  color: #555;
+}
+
+#NEWS ul{
+  padding: 0 5%;
+  list-style: none;
+}
+#NEWS ul li{
+    border-bottom: dotted 1px #999;
+  padding: 0 1%;
+  letter-spacing: 2px;
+    line-height: 42px;
+}
+#NEWS ul li a{
+  text-decoration:none;
+  color: #555;
+  transition: 0.4s;
+}
+#NEWS ul li a:hover{
+color: rgba(191,103,28,0.8);
+  transition: 0.4s;
+}
+/*news end-----------------*/
