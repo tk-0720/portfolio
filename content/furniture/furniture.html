@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>家具 | TK_ポートフォリオサイト</title>
+<link rel="stylesheet" type="text/css" href="../../css/ress.css">
+<link rel="stylesheet" type="text/css" href="furniture_style.css">
+<!-- jQuery.jsの読み込み -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<!-- スムーズスクロール部分の記述 -->
+<script>
+$(function(){
+   // #で始まるアンカーをクリックした場合に処理
+   $('a[href^=#]').click(function() {
+      // スクロールの速度
+      var speed = 400; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position = target.offset().top;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
+</head>
+<body>
+  <header>
+    <img src="image/furniture_logo.png" class="logo_img"/>
+    <div class="menu_area">
+    <p><a href="#">TOP</a></p>
+    <p><a href="#ABOUT">ABOUT</a></p>
+    <p><a href="#PRODUCTS">PRODUCTS</a></p>
+    <p><a href="#NEWS">NEWS</a></p>
+    </div>
+  </header>
+  <main>    
+<div class="main_TOP">  
+<div class="kv">
+  <div class="bg">
+    <div class="text-block text-white">
+      <p class="text">ORGANIZED<br>WAY OF LIFE</p>
+    </div>
+  </div>
+  <div class="text-block text-black">
+    <div class="text-inner">
+      <p class="text">ORGANIZED<br>WAY OF LIFE</p>
+    </div>
+  </div>
+</div>
+</div>
+    
+<section class="ABOUT" id="ABOUT">
+  <h2>ABOUT</h2>
+  <p>家具を選ぶということ</p>
+  <div class="about_image">
+    <p class="on_text">ABOUT_text</p>
+  <img src="image/furniture_1.jpg"/>
+  </div>
+  <div class="about_text">
+ <p>家具を選ぶということは、どういうことか。家具を選ぶということは、どういうことか。家具を選ぶということは、どういうことか。家具を選ぶということは、どういうことか。</p>
+  </div>
+</section>
+<section class="PRODUCTS" id="PRODUCTS">
+  <h2>PRODUCTS</h2>
+  <p>商品一覧</p>
+  
+  <div class="container">
+    <div class="item">
+      <img src="image/item_1.jpg"/>
+      <p>Item 1</p>
+    </div>
+    <div class="item">
+      <img src="image/item_2.jpg"/>
+      <p>Item 2</p>
+    </div>
+    <div class="item">
+      <img src="image/item_3.jpg"/>
+      <p>Item 3</p>
+    </div>
+    <div class="item">
+      <img src="image/item_4.jpg"/>
+      <p>Item 4</p>
+    </div>
+    <div class="item">
+      <img src="image/item_5.jpg"/>
+      <p>Item 5</p>
+    </div>
+    <div class="item">
+      <img src="image/item_6.jpg"/>
+      <p>Item 6</p>
+    </div>
+  </div>
+  
+  <div class="view_more">
+      <div class="view_more_btn">
+    <div class="eff"></div>
+    <a href="#">VIEW MORE</a>
+  </div>
+  </div>
+  
+</section>
+    
+<section class="NEWS" id="NEWS">
+  <h2>NEWS</h2>
+  <p>お知らせ</p>
+  <div class="news_area">
+    <ul>
+      <li><a href=""><span>2020.03.01</span>春のキャンペーン情報</a></li>
+      <li><a href=""><span>2020.02.01</span>２月のイベント開催について</a></li>
+      <li><a href=""><span>2019.12.01</span>年末年始の営業について</a></li>
+    </ul>
+  </div>
+  
+</section>
+    
+  </main>
+  <footer>
+    <div class="fo_area">
+    <div class="storeName">
+      
+      <img src="image/furniture_logo.png"/>
+    </div>
+    <div class="address">
+      <h2 style="text-align: center">KKK</h2>
+    <p>〒XXX-XXXX<br>
+    福岡県福岡市中央区XXXX-XX-XX<br>
+    TEL.XXX-XXXX-XXXX<br>
+    <small>営業時間： 10:00 ～ 20:00</small><br>
+      <small>定休日： 火曜日</small><br>
+    </p>
+    </div>
+    </div>
+    <div class="Copyright">
+      <p>&copy;TK_potrfolio</p>
+    </div>
+  </footer>
+</body>
+</html>

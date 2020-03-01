@@ -1,0 +1,265 @@
+/* main_TOPのCSS */
+.main_TOP{
+}
+
+.kv{
+  height: 100vh;
+  position: relative;
+}
+.bg{
+  height: 100%;
+  background: url(image/furniture_top.jpg) no-repeat center/cover;
+}
+.text-block{
+  width: 100%;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.text-black{
+  display: none;
+}
+.text{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: .04em;
+}
+.text-white .text{
+  color: #fff;
+}
+.text-black .text{
+  color: #222;
+}
+@media screen and (min-width: 767px) {
+
+  .bg{
+    width: 80%;
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    z-index: 1;
+  }
+  .text-block{
+    transform: none;
+  }
+  .text-white{
+    bottom: 12.5%;
+    left: -12.5%;
+  }
+  .text-black{
+    bottom: 30%;
+    left: 0%;
+    padding: 0 0 0 10%;
+  }
+  .text-inner{
+    width: 100%;
+  }
+  .text{
+    font-size: 54px;
+    text-align: left;
+    letter-spacing: .1em;
+  }
+  .text-black .text{
+    width: 100%;
+  }
+
+}
+@media screen and (min-width: 560px) {
+
+  .text-black{
+    display: block;
+  }
+  .text-inner{
+    width: 50%;
+    overflow: hidden;
+  }
+  .text{
+    font-size: 40px;
+  }
+  .text-black .text{
+    width: 200%;
+  }
+
+}
+/* main_TOPのCSS　end */
+
+header{
+  position: fixed;
+  /* display: flex; */
+  z-index: 100;
+}
+.logo_img{
+  width: 80px;
+  margin: 10px;
+}
+.menu_area{
+  margin: 0 0 0 10px;
+}
+.menu_area p a{
+    margin: 5px 0;
+  color: #222;
+text-decoration: none;
+    line-height: 20px;
+  position: relative;
+  display: inline-block;
+  transition: .3s;
+}
+.menu_area p a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #0f4c81;
+  transition: .3s;
+}
+.menu_area p a:hover::after {
+  width: 100%;
+}
+footer{
+  padding: 30px 8% 0 12%;
+  color: #222;
+ /*
+  background-color: #222;
+  color: #fff;
+  */
+}
+.fo_area{
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;/* 両端の子要素も含め、均等に間隔をあけて配置 */
+  align-items: center;
+  align-content: space-around;
+}
+.storeName{
+  
+}
+.address{
+line-height: 28px;
+  letter-spacing: 2px;
+}
+.Copyright{
+  text-align: center;
+  margin-bottom: 20px;
+}
+section{
+  margin: 50px 0px 120px;
+padding: 30px 8% 0 12%;
+}
+
+.ABOUT{
+  
+}
+.about_image{
+  width: 75%;
+  height: 250px;
+  overflow: hidden;
+    margin: 20px auto;
+  position: relative;
+}
+.about_image img{
+  width: 100%;
+  min-width: 550px;
+  min-height: 250px;
+}
+.about_image .on_text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%); /*要素の大きさの半分ずつを戻す*/
+  -webkit-transform: translateY(-50%) translateX(-50%);
+}
+.about_text{
+  width: 75%;
+margin: 20px auto;
+  overflow-wrap: break-word;
+  font-family: serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;/* 両端の子要素も含め、均等に間隔をあけて配置 */
+  align-items: center;
+  align-content: space-around;
+}
+.item{
+    margin: 25px 0 0 25px;
+}
+.item img{
+  height: 200px;
+width: 250px;
+}
+.view_more{
+ text-align: center;
+    margin: 40px 0;
+}
+.view_more_btn{
+  margin: auto;
+  height:50px;
+  width: 200px;
+  border:2px solid #0f4c81;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+}
+.view_more_btn a{
+  font-size:16px;
+  color:#0f4c81;
+  text-decoration:none;
+  line-height:50px;
+  transition: .4s;
+  z-index:2;
+  position:relative;
+}
+.eff{
+  height:50px;
+  width: 200px;
+  left:-200px;
+  background:#0f4c81;
+  position:absolute;
+  transition: .4s;
+  z-index:1;
+}
+.view_more_btn:hover .eff{
+  left:0;
+}
+.view_more_btn:hover a{
+  color:#fff;
+}
+.NEWS{
+  
+}
+.news_area{
+  margin: 10px 40px;
+}
+.news_area ul{
+  list-style: none;
+}
+.news_area ul li{
+  line-height: 45px;
+  letter-spacing: 3px;
+  font-size: 1.3rem;
+}
+.news_area ul li span{
+    margin: 0 18px 0 0;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+}
+.news_area ul li a{
+  color: #222;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.news_area ul li a:hover{
+  opacity: 0.4;
+  transition: 0.4s;
+}
