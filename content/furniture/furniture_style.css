@@ -1,3 +1,38 @@
+/* フェードイン */
+.fadeInUp {
+  opacity: 0;
+  transition:ease .9s;
+  transform: translate(0,100px);
+}
+.fadeInRight{
+  opacity: 0;
+  transition:ease .9s;
+  transform: translate(100px,0px);
+}
+.fadeInUp.showUp {
+  opacity: 1;
+  transform: translate(0,0px);
+}
+.fadeInRight.showUp {
+  opacity: 1;
+  transform: translate(0,0px);
+}
+/* フェードイン　ここまで */
+/* スクロールスライドフェードイン */
+.scroll-animation-obj {
+  opacity: 0;
+  transition: ease 0.9s;
+}
+.scroll-animation-hop {
+  transform: translate(0,60px);
+}
+.scroll-animation-left {
+  transform: translate(-120px,0);
+}
+.scroll-animation-right {
+  transform: translate(120px,0);
+}
+/* スクロールスライドフェードイン ここまで*/
 /* main_TOPのCSS */
 .main_TOP{
 }

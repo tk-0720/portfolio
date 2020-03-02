@@ -5,36 +5,32 @@
 <title>家具 | TK_ポートフォリオサイト</title>
 <link rel="stylesheet" type="text/css" href="../../css/ress.css">
 <link rel="stylesheet" type="text/css" href="furniture_style.css">
-<!-- jQuery.jsの読み込み -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <!-- スムーズスクロール部分の記述 -->
 <script>
 $(function(){
-   // #で始まるアンカーをクリックした場合に処理
-   $('a[href^=#]').click(function() {
-      // スクロールの速度
-      var speed = 400; // ミリ秒
-      // アンカーの値取得
-      var href= $(this).attr("href");
-      // 移動先を取得
-      var target = $(href == "#" || href == "" ? 'html' : href);
-      // 移動先を数値で取得
-      var position = target.offset().top;
-      // スムーススクロール
-      $('body,html').animate({scrollTop:position}, speed, 'swing');
-      return false;
-   });
+  $('a[href^="#"]').click(function(){
+    var speed = 500;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
 });
 </script>
+<!-- スムーズスクロール部分の記述 end-->
 </head>
 <body>
   <header>
     <img src="image/furniture_logo.png" class="logo_img"/>
+    <div class="fadeInUp">
     <div class="menu_area">
     <p><a href="#">TOP</a></p>
     <p><a href="#ABOUT">ABOUT</a></p>
     <p><a href="#PRODUCTS">PRODUCTS</a></p>
     <p><a href="#NEWS">NEWS</a></p>
+    </div>
     </div>
   </header>
   <main>    
@@ -54,8 +50,11 @@ $(function(){
 </div>
     
 <section class="ABOUT" id="ABOUT">
+<div class="scroll-animation-obj scroll-animation-hop">  
   <h2>ABOUT</h2>
   <p>家具を選ぶということ</p>
+  </div>
+  <div class="scroll-animation-obj scroll-animation-hop">
   <div class="about_image">
     <p class="on_text">ABOUT_text</p>
   <img src="image/furniture_1.jpg"/>
@@ -63,11 +62,14 @@ $(function(){
   <div class="about_text">
  <p>家具を選ぶということは、どういうことか。家具を選ぶということは、どういうことか。家具を選ぶということは、どういうことか。家具を選ぶということは、どういうことか。</p>
   </div>
+  </div>
 </section>
 <section class="PRODUCTS" id="PRODUCTS">
+  <div class="scroll-animation-obj scroll-animation-hop">
   <h2>PRODUCTS</h2>
   <p>商品一覧</p>
-  
+  </div>
+  <div class="scroll-animation-obj scroll-animation-hop">
   <div class="container">
     <div class="item">
       <img src="image/item_1.jpg"/>
@@ -94,19 +96,23 @@ $(function(){
       <p>Item 6</p>
     </div>
   </div>
-  
+  </div>
+  <div class="scroll-animation-obj scroll-animation-hop">
   <div class="view_more">
       <div class="view_more_btn">
     <div class="eff"></div>
     <a href="#">VIEW MORE</a>
   </div>
   </div>
-  
+  </div>
 </section>
     
 <section class="NEWS" id="NEWS">
+  <div class="scroll-animation-obj scroll-animation-hop">
   <h2>NEWS</h2>
   <p>お知らせ</p>
+  </div>
+  <div class="scroll-animation-obj scroll-animation-hop">
   <div class="news_area">
     <ul>
       <li><a href=""><span>2020.03.01</span>春のキャンペーン情報</a></li>
@@ -114,7 +120,7 @@ $(function(){
       <li><a href=""><span>2019.12.01</span>年末年始の営業について</a></li>
     </ul>
   </div>
-  
+  </div>
 </section>
     
   </main>
@@ -138,5 +144,6 @@ $(function(){
       <p>&copy;TK_potrfolio</p>
     </div>
   </footer>
+<script type="text/javascript" src="furniture.js"></script>
 </body>
 </html>
