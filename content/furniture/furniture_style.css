@@ -232,6 +232,24 @@ margin: 20px auto;
   height: 200px;
 width: 250px;
 }
+figure {
+  height: 200px;
+width: 250px;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+}
+figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+figure:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
 .view_more{
  text-align: center;
     margin: 40px 0;
