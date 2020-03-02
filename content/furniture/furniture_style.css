@@ -224,6 +224,8 @@ margin: 20px auto;
   justify-content: space-around;/* 両端の子要素も含め、均等に間隔をあけて配置 */
   align-items: center;
   align-content: space-around;
+  max-width: 1099px;
+  margin: auto;
 }
 .item{
     margin: 25px 0 0 25px;
