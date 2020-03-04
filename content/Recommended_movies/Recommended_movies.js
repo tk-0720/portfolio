@@ -73,7 +73,7 @@ $(window).on('scroll',function(){
   });
 });
 /* スクロールスライドフェードイン　ここまで */
-/* タイピング風表示　ここまで */
+/* タイピング風表示 */
 function typing(str = ""){
     let buf = document.getElementById("typing").innerHTML; //書き込み済みの文字を要素から取得
     let writed = buf.length; //書き込み済みの文字数を取得
@@ -92,3 +92,15 @@ const delay = 200 //1文字が表示される時間
 document.getElementById("typing").innerHTML = "";
 window.setInterval(function(){typing(str);}, delay);
 /* タイピング風表示　ここまで */
+/* TOPスクロール誘導 */
+$(window).on('load resize',function(){
+  //ウィンドウの高さを取得する
+  var targetY = $(window).height();
+  
+  //スクロールをクリックするとウィンドウの高さ分、下にスクロールする
+  $('.js-scroll a').on('click',function(){
+    $("html, body").stop().animate({scrollTop: targetY}, 500, 'swing');
+    return false;
+  });
+});
+/* TOPスクロール誘導　ここまで */
