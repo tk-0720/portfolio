@@ -6,20 +6,6 @@
 <link rel="stylesheet" type="text/css" href="../../css/ress.css">
 <link rel="stylesheet" type="text/css" href="furniture_style.css">
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<!-- スムーズスクロール部分の記述 -->
-<script>
-$(function(){
-  $('a[href^="#"]').click(function(){
-    var speed = 500;
-    var href= $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
-    $("html, body").animate({scrollTop:position}, speed, "swing");
-    return false;
-  });
-});
-</script>
-<!-- スムーズスクロール部分の記述 end-->
 </head>
 <body>
   <header>
