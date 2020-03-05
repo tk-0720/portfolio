@@ -46,7 +46,6 @@
 .topTitle_area{
   height: 100vh;
   position: relative;
-margin: 200px 0 -200px;
 }
 .top_space{
 height: 121px;
@@ -56,7 +55,7 @@ width: 391px;
 }
 .topTitle{
 position: absolute;
-  top:0;
+top: 175px;
   bottom: 0;
   right: 0;
     left: 15%;
@@ -81,6 +80,52 @@ font-family: 'Nothing You Could Do', cursive;
     letter-spacing: -1px;
     padding: 0px 0 0 7px;
 }
+
+/*スクロールボタンの指定*/
+.scroll {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+.scroll a {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 0 50px;
+  /*矢印を作成する*/
+}
+.scroll a:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 0;
+  right: 0;
+  bottom: 25px;
+  margin: auto;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+  animation: move 2s infinite;
+}
+/*矢印をアニメーションする*/
+@keyframes move {
+  0% {
+    transform: rotate(45deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+  40% {
+    transform: rotate(45deg) translate(0, 0);
+  }
+}
+
+
 .main_area{
   text-align: center;
   background-color: rgba(255,255,255,0.9);
