@@ -51,7 +51,7 @@ margin: 200px 0 -200px;
 .top_space{
 height: 121px;
 width: 391px;
-background-color: rgba(255,255,255,0.2);
+/* background-color: rgba(255,255,255,0.2); */
     margin: 0 0 0 15%;
 }
 .topTitle{
@@ -59,7 +59,7 @@ position: absolute;
   top:0;
   bottom: 0;
   right: 0;
-    left: 19%;
+    left: 15%;
 }
 .topTitle h1{
   /* background-color: rgba(255,255,255,0.2);*/
@@ -67,7 +67,7 @@ position: absolute;
     font-family: serif;
     color: rgba(255,255,255,0.7);
     font-size: 128px;
-    line-height: 57px;
+    line-height: 69px;
     letter-spacing: 20px;
     height: 121px;
     width: 391px;
