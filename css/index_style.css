@@ -59,7 +59,7 @@ position: absolute;
   top:0;
   bottom: 0;
   right: 0;
-left: 15%;
+    left: 19%;
 }
 .topTitle h1{
   /* background-color: rgba(255,255,255,0.2);*/
@@ -67,16 +67,19 @@ left: 15%;
     font-family: serif;
     color: rgba(255,255,255,0.7);
     font-size: 128px;
-    line-height: 53px;
-    letter-spacing: -10px;
+    line-height: 57px;
+    letter-spacing: 20px;
     height: 121px;
     width: 391px;
+  
+font-family: 'Nothing You Could Do', cursive;
+
 }
 .topTitle h1 span{
     font-size: 90px;
     color: rgba(255,255,255,0.7);
-    letter-spacing: -2px;
-    padding: 0px 0 0 30px;
+    letter-spacing: -1px;
+    padding: 0px 0 0 7px;
 }
 .main_area{
   text-align: center;
